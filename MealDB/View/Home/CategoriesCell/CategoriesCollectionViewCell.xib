@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionViewCell" id="gTV-IL-0wX" customClass="CategoriesCollectionViewCell" customModule="MealDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ub-HJ-uqa">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="260"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QIu-OO-gxi">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="196"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBy-z6-jQx">
+                                <rect key="frame" x="20" y="216" width="120" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="mainBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QIu-OO-gxi" firstAttribute="top" secondItem="7Ub-HJ-uqa" secondAttribute="top" id="3Rs-dH-HU2"/>
+                            <constraint firstAttribute="bottom" secondItem="BBy-z6-jQx" secondAttribute="bottom" constant="20" id="CWU-7O-K9y"/>
+                            <constraint firstItem="QIu-OO-gxi" firstAttribute="leading" secondItem="7Ub-HJ-uqa" secondAttribute="leading" id="H5U-vo-Yu3"/>
+                            <constraint firstItem="BBy-z6-jQx" firstAttribute="top" secondItem="QIu-OO-gxi" secondAttribute="bottom" constant="20" id="XH6-0J-5Mb"/>
+                            <constraint firstAttribute="trailing" secondItem="BBy-z6-jQx" secondAttribute="trailing" constant="20" id="dWN-Mm-Oqb"/>
+                            <constraint firstAttribute="trailing" secondItem="QIu-OO-gxi" secondAttribute="trailing" id="lQg-hc-AxM"/>
+                            <constraint firstItem="BBy-z6-jQx" firstAttribute="leading" secondItem="7Ub-HJ-uqa" secondAttribute="leading" constant="20" id="znR-kt-Sh1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7Ub-HJ-uqa" secondAttribute="trailing" id="7cU-SG-QEJ"/>
+                <constraint firstItem="7Ub-HJ-uqa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Jmd-LS-vDE"/>
+                <constraint firstAttribute="bottom" secondItem="7Ub-HJ-uqa" secondAttribute="bottom" id="Nfm-Ad-4cD"/>
+                <constraint firstItem="7Ub-HJ-uqa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UnS-im-Dxc"/>
+            </constraints>
+            <size key="customSize" width="160" height="260"/>
+            <connections>
+                <outlet property="categoryImage" destination="QIu-OO-gxi" id="gpu-7i-Oal"/>
+                <outlet property="categoryLabel" destination="BBy-z6-jQx" id="LoG-yX-gVI"/>
+            </connections>
+            <point key="canvasLocation" x="222.90076335877862" y="93.661971830985919"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="mainBackgroundColor">
+            <color red="0.96078431372549022" green="0.96470588235294119" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
