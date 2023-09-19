@@ -38,6 +38,7 @@ class DetailFoodViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.tabBarController?.tabBar.isHidden = true
     viewModel.setData = { [weak self] in
       DispatchQueue.main.async { [weak self] in
         self?.foodDetailImage.sd_setImage(with: URL(string: (self?.viewModel.detailData[0].strMealThumb)!))
@@ -48,6 +49,11 @@ class DetailFoodViewController: UIViewController {
     }
     
     viewModel.setupApi(foodData: foodId!)
+    setup()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    self.tabBarController?.tabBar.isHidden = true
     setup()
   }
   
