@@ -10,6 +10,8 @@ import UIKit
 class CategoriesCollectionViewCell: UICollectionViewCell {
   
   @IBOutlet weak var categoryImage: UIImageView!
-  @IBOutlet weak var categoryLabel: UILabel!
+  @IBOutlet weak var categoryLabel: UILabel!{
+    didSet { categoryLabel.font = HomeViewModel().collectionFont() }
+  }
   
 }

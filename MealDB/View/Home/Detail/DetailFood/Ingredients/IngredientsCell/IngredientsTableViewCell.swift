@@ -9,19 +9,12 @@ import UIKit
 
 class IngredientsTableViewCell: UITableViewCell {
   
-  @IBOutlet weak var ingredientLabel: UILabel!
-  @IBOutlet weak var measureLabel: UILabel!
+  @IBOutlet weak var ingredientLabel: UILabel!{
+    didSet { ingredientLabel.font = DetailFoodViewModel().subFontSet() }
+  }
   
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+  @IBOutlet weak var measureLabel: UILabel!{
+    didSet { measureLabel.font = DetailFoodViewModel().subFontSet() }
+  }
     
 }

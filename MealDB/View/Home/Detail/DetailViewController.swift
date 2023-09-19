@@ -9,7 +9,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
   
-  @IBOutlet weak var foodTitle: UILabel!
+  @IBOutlet weak var foodTitle: UILabel!{
+    didSet { foodTitle.font = viewModel.fontSet() }
+  }
   @IBOutlet weak var foodCollection: UICollectionView!{
     didSet { register() }
   }

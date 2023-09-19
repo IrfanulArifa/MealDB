@@ -17,6 +17,10 @@ class HomeViewModel {
     return UIFont(name: "Poppins-SemiBold", size: 28)!
   }
   
+  func collectionFont() -> UIFont {
+    return UIFont(name: "Poppins-Regular", size: 15)!
+  }
+  
   func setupApi() {
     network.getMealCategory { [self] data in
       guard let data = data else { return }

@@ -5,7 +5,7 @@
 //  Created by Irfanul Arifa on 18/09/23.
 //
 
-import Foundation
+import UIKit
 
 class DetailFoodViewModel {
   let network = Network()
@@ -16,10 +16,13 @@ class DetailFoodViewModel {
   var measureData: [String] = []
   var setData: (() -> Void)?
   var reloadData: (() -> Void)?
-  var count: Int?
+  
+  func subFontSet() -> UIFont {
+    return UIFont(name: "Poppins-Regular", size: 15)!
+  }
   
   var numOfIngredients: Int {
-    return count ?? 0
+    return ingredientsData.count
   }
   
   var numOfInstruction: Int {
@@ -55,9 +58,9 @@ class DetailFoodViewModel {
         data.meals[0].strIngredient19,
         data.meals[0].strIngredient20
       ]
+      
       let temp = ingredientsData
       ingredientsData = temp.compactMap { $0 }.filter { !$0.isEmpty }
-      count = ingredientsData.count
       
       measureData = [
         data.meals[0].strMeasure1,
