@@ -16,9 +16,10 @@ class DetailFoodViewModel {
   var measureData: [String] = []
   var setData: (() -> Void)?
   var reloadData: (() -> Void)?
+  var count: Int?
   
   var numOfIngredients: Int {
-    return ingredientsData.count
+    return count ?? 0
   }
   
   var numOfInstruction: Int {
@@ -31,6 +32,7 @@ class DetailFoodViewModel {
       self.detailData = data.meals
       self.instruction = data
       setData?()
+      
       ingredientsData = [
         data.meals[0].strIngredient1,
         data.meals[0].strIngredient2,
@@ -53,6 +55,9 @@ class DetailFoodViewModel {
         data.meals[0].strIngredient19,
         data.meals[0].strIngredient20
       ]
+      let temp = ingredientsData
+      ingredientsData = temp.compactMap { $0 }.filter { !$0.isEmpty }
+      count = ingredientsData.count
       
       measureData = [
         data.meals[0].strMeasure1,
@@ -76,6 +81,9 @@ class DetailFoodViewModel {
         data.meals[0].strMeasure19,
         data.meals[0].strMeasure20
       ]
+      
+      let temp2 = measureData
+      measureData = temp2.compactMap { $0 }.filter { !$0.isEmpty }
       
       reloadData?()
     }
