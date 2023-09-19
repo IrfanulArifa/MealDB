@@ -13,9 +13,7 @@ class FavoritedViewController: UIViewController {
   @IBOutlet weak var favoriteKosong: UILabel!{
     didSet { favoriteKosong.isHidden = true }
   }
-  @IBOutlet weak var favoriteLabel: UILabel!{
-    didSet { favoriteLabel.font = viewModel.fontSet()}
-  }
+  @IBOutlet weak var favoriteLabel: UILabel!
   @IBOutlet weak var favoriteCollection: UICollectionView!{
     didSet { register() }
   }
