@@ -12,10 +12,6 @@ class DetailViewModel {
   var foodData: [Foods] = []
   var reloadData: (()-> Void)?
   
-  func fontSet() -> UIFont {
-    return UIFont(name: "Poppins-SemiBold", size: 28)!
-  }
-  
   func setupApi(categoryData: String) {
     network.getMealData(category: categoryData) { [self] data in
       guard let data = data else { return }

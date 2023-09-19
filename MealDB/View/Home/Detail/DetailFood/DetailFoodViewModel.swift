@@ -17,10 +17,6 @@ class DetailFoodViewModel {
   var setData: (() -> Void)?
   var reloadData: (() -> Void)?
   
-  func subFontSet() -> UIFont {
-    return UIFont(name: "Poppins-Regular", size: 15)!
-  }
-  
   var numOfIngredients: Int {
     return ingredientsData.count
   }

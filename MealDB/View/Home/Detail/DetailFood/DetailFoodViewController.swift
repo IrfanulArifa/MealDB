@@ -15,19 +15,9 @@ class DetailFoodViewController: UIViewController {
   @IBOutlet weak var ingredientsSegmentView: UIView!
   @IBOutlet weak var instructionSegmentView: UIView!
   @IBOutlet weak var videoSegmentView: UIView!
-  
-  @IBOutlet weak var foodDetailName: UILabel!{
-    didSet { foodDetailName.font = viewModel.subFontSet() }
-  }
-  
-  @IBOutlet weak var foodDetailCategory: UILabel!{
-    didSet { foodDetailCategory.font = viewModel.subFontSet() }
-  }
-  
-  @IBOutlet weak var foodDetailArea: UILabel!{
-    didSet { foodDetailArea.font = viewModel.subFontSet() }
-  }
-  
+  @IBOutlet weak var foodDetailName: UILabel!
+  @IBOutlet weak var foodDetailCategory: UILabel!
+  @IBOutlet weak var foodDetailArea: UILabel!
   @IBOutlet weak var favoriteBtn: UIButton!{
     didSet { favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)}
   }

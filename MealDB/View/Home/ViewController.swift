@@ -12,9 +12,7 @@ class ViewController: UIViewController {
   
   let viewModel = HomeViewModel()
 
-  @IBOutlet weak var homeLabel: UILabel!{
-    didSet { homeLabel.font = viewModel.fontSet() /* Set Font Style  */}
-  }
+  @IBOutlet weak var homeLabel: UILabel!
   
   @IBOutlet weak var categoryCollection: UICollectionView!{
     didSet { register() }

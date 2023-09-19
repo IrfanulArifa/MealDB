@@ -19,8 +19,6 @@
 		00AC8D1F2AB83BEB002EA917 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC8D1D2AB83BEB002EA917 /* CategoriesCollectionViewCell.swift */; };
 		00AC8D202AB83BEB002EA917 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00AC8D1E2AB83BEB002EA917 /* CategoriesCollectionViewCell.xib */; };
 		00AC8D232AB83BFF002EA917 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC8D222AB83BFF002EA917 /* HomeViewModel.swift */; };
-		00AC8D272AB83D30002EA917 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00AC8D262AB83D30002EA917 /* Poppins-SemiBold.ttf */; };
-		00AC8D292AB83D3A002EA917 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00AC8D282AB83D3A002EA917 /* Poppins-Regular.ttf */; };
 		00AC8D2B2AB83EA5002EA917 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC8D2A2AB83EA5002EA917 /* Endpoint.swift */; };
 		00AC8D2D2AB83ED3002EA917 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC8D2C2AB83ED3002EA917 /* CoreDataManager.swift */; };
 		00AC8D2F2AB83EE0002EA917 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC8D2E2AB83EE0002EA917 /* MealModel.swift */; };
@@ -59,8 +57,6 @@
 		00AC8D1D2AB83BEB002EA917 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		00AC8D1E2AB83BEB002EA917 /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		00AC8D222AB83BFF002EA917 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		00AC8D262AB83D30002EA917 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.ttf"; path = "../../../../../../../Downloads/Poppins-2/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		00AC8D282AB83D3A002EA917 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../../../../Downloads/Poppins-2/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		00AC8D2A2AB83EA5002EA917 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		00AC8D2C2AB83ED3002EA917 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		00AC8D2E2AB83EE0002EA917 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
@@ -205,18 +201,8 @@
 				00AC8D2A2AB83EA5002EA917 /* Endpoint.swift */,
 				00AC8D302AB843DB002EA917 /* UIViewExtension.swift */,
 				00AC8D5E2AB89E06002EA917 /* SnackBar.swift */,
-				00AC8D252AB83CDC002EA917 /* Font */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		00AC8D252AB83CDC002EA917 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				00AC8D262AB83D30002EA917 /* Poppins-SemiBold.ttf */,
-				00AC8D282AB83D3A002EA917 /* Poppins-Regular.ttf */,
-			);
-			path = Font;
 			sourceTree = "<group>";
 		};
 		00AC8D352AB84C15002EA917 /* Detail */ = {
@@ -362,13 +348,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00AC8D272AB83D30002EA917 /* Poppins-SemiBold.ttf in Resources */,
 				00AC8D202AB83BEB002EA917 /* CategoriesCollectionViewCell.xib in Resources */,
 				00AC8D562AB872C9002EA917 /* IngredientsTableViewCell.xib in Resources */,
 				00AC8D412AB856D8002EA917 /* FoodCollectionViewCell.xib in Resources */,
 				00AC8D5A2AB872D6002EA917 /* InstructionTableViewCell.xib in Resources */,
 				00AC8D092AB8323C002EA917 /* LaunchScreen.storyboard in Resources */,
-				00AC8D292AB83D3A002EA917 /* Poppins-Regular.ttf in Resources */,
 				00AC8D372AB84C25002EA917 /* Detail.storyboard in Resources */,
 				00AC8D062AB8323C002EA917 /* Assets.xcassets in Resources */,
 				00AC8D012AB8323B002EA917 /* Main.storyboard in Resources */,

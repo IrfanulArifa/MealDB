@@ -9,12 +9,7 @@ import UIKit
 
 class IngredientsTableViewCell: UITableViewCell {
   
-  @IBOutlet weak var ingredientLabel: UILabel!{
-    didSet { ingredientLabel.font = DetailFoodViewModel().subFontSet() }
-  }
-  
-  @IBOutlet weak var measureLabel: UILabel!{
-    didSet { measureLabel.font = DetailFoodViewModel().subFontSet() }
-  }
+  @IBOutlet weak var ingredientLabel: UILabel!
+  @IBOutlet weak var measureLabel: UILabel!
     
 }

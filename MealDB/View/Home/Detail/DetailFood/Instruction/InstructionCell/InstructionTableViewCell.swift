@@ -9,8 +9,6 @@ import UIKit
 
 class InstructionTableViewCell: UITableViewCell {
 
-  @IBOutlet weak var instructionLabel: UILabel!{
-    didSet { instructionLabel.font = DetailFoodViewModel().subFontSet() }
-  }
+  @IBOutlet weak var instructionLabel: UILabel!
     
 }
